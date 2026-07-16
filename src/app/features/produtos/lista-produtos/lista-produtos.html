@@ -1,4 +1,4 @@
-@for (item of produtos; track item){
+@for (item of produtos(); track item){
 
     <app-produto 
     [nome] ="item.nome"
@@ -6,3 +6,6 @@
     (produtoSelecionado) = "exibirProduto ($event)">
     </app-produto>
 }
+
+<p><button (click)="adicionarProduto()">Adicionar Produto</button></p>
+<!--foi adicionado um novo butao, fiz a nova fução trabalhar-->
