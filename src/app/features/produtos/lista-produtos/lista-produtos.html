@@ -9,3 +9,7 @@
 
 <p><button (click)="adicionarProduto()">Adicionar Produto</button></p>
 <!--foi adicionado um novo butao, fiz a nova fução trabalhar-->
+<h2>Total de produtos: {{totalProdutos()}}</h2>
+<!--mostra o total dos produtos-->
+<h3>Valor total: {{valorTotal() |precoFormatado}}</h3>
+<p><button (click)="substituirProdutos()">Substituir Produtos</button></p>
